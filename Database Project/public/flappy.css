@@ -1,0 +1,45 @@
+body{
+				background:url("/flappybird.png") no-repeat fixed center;
+				background-size:100% 100%;
+			}
+		.login-form {
+			position:relative;
+			top:150px;
+			width: 300px;
+			margin: 0 auto;
+			background:rgba(255,255,255,0.8);
+			font-family: Tahoma, Geneva, sans-serif;
+		}
+		.login-form h1 {
+			text-shadow:1px 1px 3px black;
+			text-align: center;
+			color: #4d4d4d;
+			font-size: 24px;
+			padding: 20px 0 20px 0;
+		}
+		.login-form input[type="password"],
+		.login-form input[type="text"] {
+			width: 90%;
+			padding: 10px;
+			border: 1px solid #dddddd;
+			margin-bottom: 15px;
+			margin-left:12px;
+			box-sizing:border-box;
+		}
+		.login-form input[type="submit"] {
+			width: 90%;
+			padding: 15px;
+			margin-left:12px;
+			background-color: #535b63;
+			border: 0;
+			box-sizing: border-box;
+			cursor: pointer;
+			font-weight: bold;
+			color: #ffffff;
+		}
+		.login-form p,a{
+			font-family: Tahoma, Geneva, sans-serif;
+			text-shadow: 1px 1px 2px black;
+			margin-left:12px;
+			padding-bottom:2px;
+		}

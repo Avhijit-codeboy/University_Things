@@ -1,0 +1,41 @@
+body{
+	background:url("/flappySky.png") no-repeat fixed center;
+	background-size:100% 100%;
+}
+.signUp{
+			position:relative;
+			top:150px;
+			width: 300px;
+			margin: 0 auto;
+			background:rgba(255,255,255,0.8);
+			font-family: Tahoma, Geneva, sans-serif;
+		}
+.signUp h1 {
+			text-shadow:1px 1px 3px black;
+			text-align: center;
+			color: #4d4d4d;
+			font-size: 24px;
+			padding: 20px 0 20px 0;
+		}
+.signUp input[type="password"],
+.signUp input[type="text"],
+.signUp #confPass {
+			width: 90%;
+			padding: 10px;
+			border: 1px solid #dddddd;
+			margin-bottom: 15px;
+			margin-left:12px;
+			box-sizing:border-box;
+		}
+.signUp input[type="submit"] {
+			width: 90%;
+			padding: 15px;
+			margin-left:12px;
+			margin-bottom:10px;
+			background-color: #00FFFF;
+			border: 0;
+			box-sizing: border-box;
+			cursor: pointer;
+			font-weight: bold;
+			color: #000000;
+		}
