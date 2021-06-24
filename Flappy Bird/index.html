@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flappy Bird</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src = "bird.js"></script>
+	<script src = "pipe.js"></script>
+	<style type="text/css">
+		#ScorePanel{
+			position:relative;
+			width:20%;
+			height:95%;
+			top:0px;
+			left:78%;
+			box-shadow:1px 1px 5px black;
+		}
+		#ScorePanel h1{
+			text-shadow:1px 1px 1px black;
+			font-family:"Algerian";
+			margin-left:30%;
+		}
+		#ScorePanel #div0{
+			padding:10px;
+			padding-bottom:10px;
+			border: 1px solid #dddddd;
+			margin-bottom: 25px;
+			margin-left:40px;
+			box-sizing:border-box;
+			width:70%;
+			height:60%;
+			color:red;
+			text-align:center;
+			font-size:30px;
+		}
+		#ScorePanel form input[type="submit"]{
+			padding:10px;
+			padding-bottom:10px;
+			border: 1px solid #dddddd;
+			margin-bottom: 15px;
+			margin-left:40px;
+			box-sizing:border-box;
+			width:70%;
+			height:60%;
+			background:#535b63;
+			cursor: pointer;
+			font-weight: bold;
+			color: #ffffff;
+			text-shadow:1px 1px 1px white;
+		}
+		#ScorePanel #form1 input[type="submit"]{
+			padding:10px;
+			padding-bottom:10px;
+			border: 1px solid #dddddd;
+			margin-bottom: 25px;
+			margin-top:20px;
+			margin-left:40px;
+			box-sizing:border-box;
+			width:70%;
+			height:60%;
+			background:#535b63;
+			cursor: pointer;
+			font-weight: bold;
+			color: #ffffff;
+			text-shadow:1px 1px 1px white;
+		}
+		#ScorePanel #div1{
+			padding:10px;
+			padding-bottom:10px;
+			border: 1px solid #dddddd;
+			margin-bottom: 25px;
+			margin-left:40px;
+			box-sizing:border-box;
+			width:70%;
+			height:60%;
+			color:red;
+			text-align:center;
+			font-size:30px;
+		}
+	</style>
+</head>
+<body>
+<div id = "ScorePanel">
+	<h1>Score</h1>
+	<div id="div0">1</div>
+	<script src = "sketch.js"></script>
+	<form action="scoresave" method="POST">
+		<input type="submit" name="submit" value="Save Score">
+	</form>
+	<form action="scoreretrieve" method="POST" id = "form1">
+		<input type="submit" name="submit" value="Last Score">
+	</form>
+	<div id = "div1">2</div><br>
+</div>
+</body>
+</html>
